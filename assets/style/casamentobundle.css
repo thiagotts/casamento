@@ -439,7 +439,7 @@ section.ourtimeline img {
     }
 
     .intersecao {
-        width: 50% !important;
+        width: 80% !important;
         border: 0 !important;
     }    
 
@@ -448,16 +448,60 @@ section.ourtimeline img {
     }
 
     .secao-cerimonia {
-        background: url(../images/pages/cerimonia/bg.jpg) 70% -30% no-repeat fixed !important; 
+        background: none; 
     }        
 
     .secao-rsvp {
-        background: url(../images/pages/rsvp/bg.jpg) 20% 20% no-repeat fixed !important;
+        background: none;
     }
 
     .secao-mensagens {
-        background: url(../images/pages/mensagens/2.jpg) 80% 0 repeat-y fixed !important;
-    }    
+        background: none;
+    }
+
+    .secao-prerodape {
+        background: none;
+        height: 100%;
+    }
+}
+@media (min-width: 1080px) {
+    .ver-abaixo {
+        display: none;
+    }
+
+    .intersecao {
+        width: 50% !important;
+        border: 0 !important;
+    }
+
+    .video-overlay:after {
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAHUlEQVQIW2NkYGD4D8SM6DRIAAQwJDFUwhRRUQcALRkSBISGlPAAAAAASUVORK5CYII=") repeat top left;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 0.8;
+    }
+
+    .secao-cerimonia {
+        background: none;
+    }
+
+    .secao-rsvp {
+        background: none;
+    }
+
+    .secao-mensagens {
+        background: none;
+    }
+
+    .secao-prerodape {
+        background: none;
+        height: 100%;
+    }
 }
 @font-face {
     font-family: 'OldScript';
@@ -471,27 +515,6 @@ form {
 
 .container-menu {
     width: 100% !important;
-}
-
-.ver-abaixo {
-    display: none;
-}
-
-.intersecao {
-    width: 45% !important;
-    border: 0 !important;
-}
-
-.video-overlay:after {
-    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAHUlEQVQIW2NkYGD4D8SM6DRIAAQwJDFUwhRRUQcALRkSBISGlPAAAAAASUVORK5CYII=") repeat top left;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    opacity: 0.8;
 }
 
 .oldscript {
@@ -573,23 +596,6 @@ ul.rsvp {
 
 .secao-noivos header {
     padding-bottom: 0;
-}
-
-.secao-cerimonia {
-    background: url(../images/pages/cerimonia/bg.jpg) 50% 20% no-repeat fixed;
-}
-
-.secao-rsvp {
-    background: url(../images/pages/rsvp/bg.jpg) 30% 0 no-repeat fixed;
-}
-
-.secao-mensagens {
-    background: url(../images/pages/mensagens/2.jpg) 50% 0 repeat-y fixed;
-}
-
-.secao-prerodape {
-    background: url(../images/pages/prerodape/bg.jpg) 50% 0 no-repeat fixed;
-    height: 100%;
 }
 
 .secao-ropape {
