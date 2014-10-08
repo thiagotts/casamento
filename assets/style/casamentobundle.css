@@ -673,6 +673,10 @@ ul.rsvp {
     }
 }
 
+#container-mensagens {
+    font-weight: 500;
+}
+
 #container-fotos .pics{
     display: none;
 }
