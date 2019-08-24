@@ -1,0 +1,382 @@
+@font-face {
+    font-family: 'OldScript';
+    src: url('../fonts/OldScript.ttf') format('truetype');
+    text-rendering: optimizeLegibility;
+}
+
+#progresso-mensagens {
+    display: inline-block;
+    width: 25%;
+    height: 3px;
+    margin-bottom: 40px;
+}
+
+.secao-cerimonia { background: none; }
+
+.secao-rsvp {
+    background: none;
+    height: 70%;
+}
+
+.secao-mensagens { background: none; }
+
+.secao-prerodape {
+    background: none;
+    height: 100%;
+}
+
+form { margin-bottom: 5px !important; }
+
+.container-menu { width: 100% !important; }
+
+.oldscript {
+    font-family: 'OldScript', cursive;
+    font-size: 325%;
+    font-weight: 200;
+}
+
+.opensans {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 325%;
+    font-weight: 600;
+}
+
+a#mais-presentes { cursor: pointer; }
+
+ul.rsvp {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.altura20 { padding-top: 20px !important; }
+
+.altura30 { padding-top: 30px !important; }
+
+.altura50 { padding-top: 50px !important; }
+
+.altura150 { padding-top: 150px !important; }
+
+.abaixo20 { padding-bottom: 20px; }
+
+.abaixo50 { padding-bottom: 50px; }
+
+.abaixo80 { padding-bottom: 80px; }
+
+.btn-confirmacao {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.black { color: #292929; }
+
+.titulo-secao {
+    font-family: 'OldScript', cursive;
+    font-size: 450%;
+    font-weight: 300;
+}
+
+.fundo-cinza {
+    background: url('data:image/jpeg;base64,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') repeat;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+
+.secao-noivos header { padding-bottom: 0; }
+
+.secao-ropape {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.menu-visivel {
+    display: block;
+    opacity: 1;
+}
+
+.absoluto { position: absolute !important; }
+
+.secao-centro { margin-bottom: 50px; }
+
+.local-evento {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-bottom: 50px;
+    border-radius: 2px;
+}
+
+.local-evento .website a {
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: bold;
+}
+
+.mapa {
+    height: 400px;
+    position: relative;
+    background-color: rgb(229, 227, 223);
+    overflow: hidden;
+    box-shadow: 0 0 20px #999;
+    border-radius: 2px;
+    -webkit-transform: none !important;
+}
+
+.pointer { cursor: pointer; }
+
+.spinner {
+    width: 70px;
+    height: 70px;
+    background-color: #4e808e;
+    margin: 100px auto;
+    animation: rotateplane 1.2s infinite ease-in-out;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+    0% { -webkit-transform: perspective(120px) rotate(45deg); }
+
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) rotate(45deg); }
+
+    100% { -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg) rotate(45deg); }
+}
+
+@keyframes rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg) rotate(45deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) rotate(45deg);
+    }
+
+    50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) rotate(45deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) rotate(45deg);
+    }
+
+    100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg) rotate(45deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg) rotate(45deg);
+    }
+}
+
+#container-mensagens {
+    font-weight: 500;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#container-fotos .pics { display: none; }
+
+#casasfreitas { cursor: pointer; }
+
+#menu-fixo {
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.65);
+    z-index: 2000;
+    padding-bottom: 10px;
+    *position: relative;
+    *z-index: 2000;
+}
+
+#menu-fixo .brand {
+    padding: 7px 100px 8px 0;
+    text-align: left;
+}
+
+#menu-fixo #menu-principal {
+    display: inline-block;
+    float: none;
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+    text-align: center;
+    line-height: 18px;
+    font-size: 12px;
+    list-style: none;
+}
+
+#menu-fixo #menu-principal li {
+    display: inline-block;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    line-height: 18px;
+    list-style: none;
+}
+
+#menu-fixo #menu-principal a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: #292929;
+    padding: 12px 15px;
+    margin: 0px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #ffffff;
+    position: relative;
+    display: block;
+}
+
+#menu-fixo #menu-principal li a:focus,
+#menu-fixo #menu-principal li a:hover {
+    background: none;
+    outline: medium none;
+}
+
+#menu-fixo #menu-principal li:hover a:after,
+#menu-fixo #menu-principal li.active a:after {
+    background-color: #bbbbbb;
+    bottom: -4px;
+    content: "";
+    height: 7px;
+    left: 50%;
+    margin-left: -4px;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 7px;
+}
+
+#menu-fixo .mobile-menu {
+    display: none;
+    float: right;
+    padding: 7px 10px;
+    margin-left: 5px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+#menu-fixo .mobile-menu .icon-bar {
+    background-color: #292929;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    display: block;
+    height: 3px;
+    width: 26px;
+    margin-bottom: 3px;
+    margin-top: 1px;
+}
+
+#menu-fixo .mobile-menu:hover .icon-bar { background-color: #4e808e; }
+
+.page-home {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.page-home .logo {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    height: 140px;
+    position: relative;
+    width: 140px;
+    margin: 0 auto;
+}
+
+.page-home .logo .scrollNormal {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -70px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.page-home .logo .scrollDown {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -70px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.page-home .logo:hover .scrollNormal {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.page-home .logo:hover .scrollDown {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+}
+
+.page-home #welcome-messages {
+    margin-top: 35px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 123123;
+}
+
+.page-home #welcome-messages h1 {
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.page-home #welcome-messages ul,
+.page-home #welcome-messages li {
+    margin: 0;
+    padding: 0;
+}
+
+.page-home #welcome-messages.divider:after {
+    margin: auto auto 14px;
+    padding-bottom: 5px;
+}
+
+.page-home #welcome-messages + p {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.page-home .social-icons { margin: 50px auto 0; }
+
+.page-home .centralized { z-index: 2; }

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://vswebessentials.com/schemas/v1/bundle.xsd">
+  <settings>
+    <!--Determines if the bundle file should be automatically optimized after creation/update.-->
+    <minify>true</minify>
+    <!--Determin whether to generate/re-generate this bundle on building the solution.-->
+    <runOnBuild>false</runOnBuild>
+    <!--Specifies a custom subfolder to save files to. By default, compiled output will be placed in the same folder and nested under the original file.-->
+    <outputDirectory />
+  </settings>
+  <!--The order of the <file> elements determines the order of the files in the bundle.-->
+  <files>
+    <file>/source/assets/myJs/casamento.js</file>
+    <file>/source/assets/myJs/contagemRegressiva.js</file>
+    <file>/source/assets/myJs/mapas.js</file>
+    <file>/source/assets/myJs/mensagens.js</file>
+    <file>/source/assets/myJs/presentsloader.js</file>
+    <file>/source/assets/myJs/utils.js</file>
+    <file>/source/assets/myJs/plugins/GMaps.js</file>
+    <file>/source/assets/myJs/plugins/jquery.videoBG.js</file>
+    <file>/source/assets/myJs/plugins/lazyImages.js</file>
+    <file>/source/pages/galeria/js/blueimp-helper.js</file>
+    <file>/source/pages/galeria/js/blueimp-gallery.js</file>
+    <file>/source/pages/galeria/js/blueimp-gallery-indicator.js</file>
+  </files>
+</bundle>

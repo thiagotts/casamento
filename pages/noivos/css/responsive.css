@@ -1,0 +1,53 @@
+@media (max-width: 1000px) {
+
+    /*hide the little "heart" graphic on #ourstory*/
+    .couple-photos .hearts {display: none!important}
+
+    /*decrease the sizes for the couple photos on #ourstory */
+    .couple-photos .round-frame-bg {
+        height: 260px;
+        width: 261px;
+    }
+    .couple-photos .round-frame {
+        height: 250px;
+        width: 250px;
+    }
+
+    .couple-photos .bride, .couple-photos .groom {
+        height: 250px;
+    }
+}
+
+@media (max-width: 720px) {  
+    
+    /* style the timeline posts */
+    .thetimeline .post-content {
+        width: 100%;
+    }
+
+    .thetimeline .post-box:before {
+        content: inherit;
+    }
+    .thetimeline .post-content header .date {
+        width: 19%;
+    }
+    .thetimeline .post-content header h2 {
+        width: 80%
+    }
+    .post .excerpt {
+        width: 100%;
+        padding: 10px 0 20px 25px;
+    }
+    .post .excerpt-content span {
+        margin-right: 15px;
+    }
+    .post.odd .excerpt-content.quote {
+        padding: 20px 30px 20px 20px;
+    }
+    .post.even .excerpt-content.quote {
+        padding: 20px 30px 20px 20px;
+    }
+    .post.even .excerpt {
+        padding: inherit;
+    }
+}

@@ -1,0 +1,40 @@
+@media (max-width: 1079px) {
+    #menu-fixo {
+        display: none !important;
+    }
+
+    #navigation {
+        display: none !important;
+    }
+
+    .intersecao {
+        width: 80% !important;
+        border: 0 !important;
+    }    
+
+    .ver-abaixo {
+        display: inline !important;
+    }
+}
+@media (min-width: 1080px) {
+    .ver-abaixo {
+        display: none;
+    }
+
+    .intersecao {
+        width: 40% !important;
+        border: 0 !important;
+    }
+
+    .video-overlay:after {
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAHUlEQVQIW2NkYGD4D8SM6DRIAAQwJDFUwhRRUQcALRkSBISGlPAAAAAASUVORK5CYII=") repeat top left;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 0.8;
+    }
+}
